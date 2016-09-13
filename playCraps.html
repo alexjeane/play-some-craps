@@ -1,0 +1,46 @@
+<script>
+
+
+//var dice1 = Math.floor((Math.random() * 6) + 1);
+//var dice2 = Math.floor((Math.random() * 6) + 1);
+
+
+var dice1 = 5;
+var dice2 = 2;
+
+
+
+
+
+
+var diceSum = dice1 + dice2;
+
+
+//var phraseList = ["Snake Eyes!","Ace Deuce!", "Four!", "Fever Five!", "Six!", 
+//"It's a Natural!", "Eight!", "Nina!", "Ten!", "Yo!", "Boxcars!"];
+
+
+
+var easyPhraseList = ["","Ace Deuce!", "Easy Four!", "Fever Five!", "Easy Six!", 
+"It's a Natural!", "Easy Eight!", "Nina!", "Easy Ten!", "Yo!", ""];
+
+
+var hardPhraseList = ["Snake Eyes!", "", "Hard Four!","", "Hard Six!","", "Hard Eight!","", "Hard Ten!"
+,"", "Boxcars!"];
+
+
+alert(dice1);
+alert(dice2);
+alert(diceSum);
+
+
+
+if(dice1 != dice2)
+{
+	document.write(easyPhraseList[diceSum-2]);
+}
+else
+{
+	document.write(hardPhraseList[diceSum-2]);
+}
+</script>
